@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 
-/*
+/**
  * Represents a user in the system.
  * Users can add, view, complete, and delete tasks.
  */
