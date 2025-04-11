@@ -9,7 +9,7 @@ import java.util.HashMap;
 public class LoginSystem {
     private HashMap<String, User> users = new HashMap<>();
     private final String adminUsername = "admin";
-    private final String adminPassword = "admin123";
+    private final String adminPassword = "password123";
 
     public LoginSystem() {
         // Register the admin
