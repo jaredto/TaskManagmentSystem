@@ -1,3 +1,9 @@
+/*
+ * Represents a task in the system.
+ * Tasks can be marked as complete.
+ */
+
+
 public class Task {
     private String task;
     private boolean isCompleted;

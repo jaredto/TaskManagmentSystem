@@ -1,5 +1,11 @@
 import java.util.HashMap;
 
+/*
+ * The login system keeps track of all users and allows for 
+ * loggin in and registering new users.
+ */
+
+
 public class LoginSystem {
     private HashMap<String, User> users = new HashMap<>();
     private final String adminUsername = "admin";
@@ -10,6 +16,7 @@ public class LoginSystem {
         users.put(adminUsername, new Admin(adminUsername, adminPassword));
     }
 
+    //If username matches password return user, else null.
     public User login(String username, String password) {
         User user = users.get(username);
         if (user != null && user.checkPassword(password)) {

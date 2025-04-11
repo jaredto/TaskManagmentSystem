@@ -1,3 +1,9 @@
+/*
+ * Admin is a special type of User with extra priveleges.
+ * Admins can view all users and add/remove them. 
+ */
+
+
 import java.util.HashMap;
 
 public class Admin extends User {

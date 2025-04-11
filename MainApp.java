@@ -1,5 +1,9 @@
 import java.util.Scanner;
 
+/*
+ * Main app loop
+ */
+
 public class MainApp {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
@@ -10,6 +14,8 @@ public class MainApp {
         System.out.println("Welcome to the Task Manager!");
 
         while (running){
+
+            // ==== User Registration/Login Menu ====
             while (currentUser == null) {
                 System.out.println("\n1. Login");
                 System.out.println("2. Register");
@@ -54,10 +60,11 @@ public class MainApp {
             if (running == false){
                 break;
             }
-          
+
+            // ===== Main Application Menu ====
             System.out.println("\n--- MENU ---");
         
-            // All user option
+            // All user options
             System.out.println("1. Add Task");
             System.out.println("2. View Tasks");
             System.out.println("3. Complete Task");
@@ -75,6 +82,7 @@ public class MainApp {
             System.out.print("Choose: ");
             int choice = Integer.parseInt(scanner.nextLine());
         
+            //Handle all user choices
             switch (choice) {
                 case 1 -> {
                     System.out.print("Enter task description: ");
@@ -93,6 +101,8 @@ public class MainApp {
                     System.out.println("Logging out...");
                     currentUser = null;
                 }
+
+                //Handle additional admin choices
                 case 6 -> {
                     if (currentUser instanceof Admin admin) {
                         admin.viewAllUsers(loginSystem.getUsers());
