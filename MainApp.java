@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-/*
+/**
  * Main app loop
  */
 
