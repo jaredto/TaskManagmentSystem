@@ -1,6 +1,6 @@
 import java.util.HashMap;
 
-/*
+/**
  * The login system keeps track of all users and allows for 
  * loggin in and registering new users.
  */

@@ -1,4 +1,4 @@
-/*
+/**
  * Represents a task in the system.
  * Tasks can be marked as complete.
  */
