@@ -44,4 +44,4 @@ A simple console-based task management system built in Java that supports:
 
 ## 📊 UML Class Diagram
 
-![UML Diagram](uml/TaskManagementSystem Class Diagram.png)
+![UML Diagram](uml/TaskManagementSystemClassDiagram.png)
