@@ -39,3 +39,9 @@ A simple console-based task management system built in Java that supports:
 2. Compile the Java files:
    ```bash
    javac *.java
+
+---
+
+## 📊 UML Class Diagram
+
+![UML Diagram](uml/TaskManagementSystem Class Diagram.png)
