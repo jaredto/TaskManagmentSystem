@@ -8,12 +8,12 @@ import java.util.HashMap;
 
 public class LoginSystem {
     private HashMap<String, User> users = new HashMap<>();
-    private final String adminUsername = "admin";
-    private final String adminPassword = "password123";
+    private final String ADMINUSERNAME = "admin";
+    private final String ADMINPASSWORD = "password123";
 
     public LoginSystem() {
         // Register the admin
-        users.put(adminUsername, new Admin(adminUsername, adminPassword));
+        users.put(ADMINUSERNAME, new Admin(ADMINUSERNAME, ADMINPASSWORD));
     }
 
     //If username matches password return user, else null.
